@@ -2,7 +2,7 @@ FROM mcr.microsoft.com/devcontainers/python:3.11-bookworm
 
 WORKDIR /thesis
 
-RUN apt-get update && apt-get install colmap ffmpeg libsm6 libxext6  -y
+RUN apt-get update && apt-get install colmap imagemagick ffmpeg libsm6 libxext6  -y
 
 COPY requirements.txt .
 
