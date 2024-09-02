@@ -12,4 +12,6 @@ RUN pip install -r requirements.txt
 
 RUN pip install git+https://github.com/rmbrualla/pycolmap.git
 
+RUN pip install dis-bg-remover
+
 RUN chmod 777 /
