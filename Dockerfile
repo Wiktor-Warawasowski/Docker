@@ -12,16 +12,6 @@ RUN pip install -r requirements.txt
 
 RUN pip install git+https://github.com/rmbrualla/pycolmap.git
 
-WORKDIR /
-
-RUN git clone --branch 3.6 --single-branch https://github.com/colmap/colmap.git
-
-WORKDIR /colmap/build
-
-RUN cmake ..
-
-RUN make -j8
-
-RUN make install
+RUN pip install dis-bg-remover
 
 RUN chmod 777 /
